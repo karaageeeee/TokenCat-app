@@ -2,7 +2,9 @@
 
 **Claude Code / Codex の残量を、メニューバーの猫で。**
 
-TokenCat は macOS のメニューバーに住むドット絵の猫です。Claude Code と Codex の使用量（5時間枠・週次枠）に合わせて、猫がだんだん疲れていきます。数字を読まなくても、残りの余力がひと目でわかります。
+TokenCat は macOS のメニューバーに住む猫です。Claude Code と Codex の使用量（5時間枠・週次枠）に合わせて、猫が走り、歩き、やがて力尽きて立ち止まります。数字を読まなくても、残りの余力がひと目でわかります。
+
+猫は、写真家エドワード・マイブリッジが1887年に撮影した本物の猫の連続写真から切り抜いたシルエットです。メニューバーではシステムアイコンと同じく、ライト／ダークに合わせて黒・白が自動で切り替わります。
 
 ![TokenCat](images/preview.png)
 
@@ -17,6 +19,7 @@ TokenCat は macOS のメニューバーに住むドット絵の猫です。Clau
 - 動作環境: macOS 14 (Sonoma) 以降、Apple Silicon (M1 以降) の Mac。
 - Apple の公証 (Notarization) 済みなので、そのまま開けます。
 - Claude Code または Codex CLI に、あらかじめログインしておいてください。
+- Claude Code のログイン情報は約8時間で期限が切れ、ターミナルで `claude` を起動したときに更新されます。デスクトップアプリだけを使っている場合は、ときどきターミナルで `claude` を一度起動してください。
 
 ## できること
 
@@ -24,7 +27,7 @@ TokenCat は macOS のメニューバーに住むドット絵の猫です。Clau
 | --- | --- |
 | ![使用量](images/popover.png) | ![AIセッション](images/sessions.png) |
 
-- **残量で猫の様子が変わる**: 元気 → 少し疲れ気味 → 眠そう → へとへと → ぐったり
+- **残量で猫の様子が変わる**: 全力で走る → 小走り → 歩く → ゆっくり歩く → 力尽きて立ち止まる
 - **Claude Code と Codex を同時に表示**: 5時間枠・週次枠の使用率と、リセットまでの残り時間
 - **AIセッションの采配ビュー**: 複数の Claude Code / Codex セッションが「仕事中・応答待ち・待機」のどれかを一覧表示。応答待ちのAIをすぐ見つけられ、作業が終わると通知します
 - 状態が変わったときの macOS 通知、更新間隔の設定、ログイン時の自動起動
@@ -48,6 +51,13 @@ TokenCat は外部に独自のサーバーを持たず、データを収集し�
 ## 不具合・要望
 
 [Issues](https://github.com/karaageeeee/TokenCat-app/issues) へどうぞ。
+
+## クレジット
+
+猫のシルエットは、パブリックドメインの写真から作成しています。
+
+- Eadweard Muybridge, *Animal Locomotion* (1887), Plates 716 / 718 / 720（USC Digital Library、Boston Public Library のスキャン、Wikimedia Commons 経由）
+- お座りの姿勢: USDA の写真（Wikimedia Commons 経由、パブリックドメイン）
 
 ---
 
